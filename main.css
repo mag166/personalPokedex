@@ -5,6 +5,24 @@
     align-items: center;
     text-align: left;
 }
+header{
+    height:150px;
+    background-image: url(pokemon.png);
+    background-size:contain;
+    background-position:center;
+
+}
+#trainer{
+    height:600px;
+    text-align: center;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+}
+#pokeball{
+    height:300px;
+}
 
 #alakazam{
     height: 800px;
@@ -13,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(abackground.jpg)    
+    background: url(abackground.jpg)
 }
 .attributes-list{
     padding: 90px;
@@ -41,7 +59,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(arceus-bg.jpg)    
+    background: url(arceus-bg.jpg)
 }
 
 #machamp{
@@ -52,5 +70,5 @@ h2{
     justify-content: center;
     align-items: center;
     background: url(mbackground.jpg);
-    background-size: cover;  
+    background-size: cover;
 }

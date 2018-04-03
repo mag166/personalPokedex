@@ -47,13 +47,13 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
 
     data.abilities.forEach((item) => {
         alakazam.addAbility(item.ability.name)
+        abilities.innerHTML += item.ability.name +"<br>"
     })
 
     minhal.add(alakazam)
     hp.innerHTML = alakazam.hp
     attack.innerHTML = alakazam.attack
     defense.innerHTML = alakazam.defense
-    abilities.innerHTML = alakazam.abilities.toString()
 
 }).catch((error) => {
     console.log(error)
@@ -77,6 +77,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
 
     data.abilities.forEach((item) => {
         arceus.addAbility(item.ability.name)
+        abilities.innerHTML += item.ability.name +"<br>"
     })
 
 
@@ -84,7 +85,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
     hp.innerHTML = arceus.hp
     attack.innerHTML = arceus.attack
     defense.innerHTML = arceus.defense
-    abilities.innerHTML = arceus.abilities.toString()
 
 }).catch((error) => {
     console.log(error)
@@ -98,26 +98,27 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
       let attack = document.getElementById("machamp-attack")
       let defense = document.getElementById("machamp-defense")
       let abilities = document.getElementById("machamp-abilities")
-  
-  
+
+
       let machamp = new Pokemon(
           data.name,
           data.stats[5].base_stat,
           data.stats[4].base_stat,
           data.stats[3].base_stat,
       )
-  
+
       data.abilities.forEach((item) => {
           machamp.addAbility(item.ability.name)
+          abilities.innerHTML += item.ability.name +"<br>"
       })
-  
+
+
       minhal.add(machamp)
       hp.innerHTML = machamp.hp
       attack.innerHTML = machamp.attack
       defense.innerHTML = machamp.defense
-      abilities.innerHTML = machamp.abilities.toString()
-  
-  
+
+
   }).catch((error) => {
       console.log(error)
     })
