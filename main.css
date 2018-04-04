@@ -1,16 +1,5 @@
-.pokemon-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-header{
-    height:150px;
-    background-image: url(pokemon.png);
-    background-size:contain;
-    background-position:center;
-
+#headerText{
+    color: black
 }
 #trainer{
     height:600px;
@@ -25,16 +14,14 @@ h3{
 }
 
 #alakazam{
-    height: 800px;
+    height: 700px;
     text-align: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(abackground.jpg)
+    background: url(abackground.jpg);
+    background-attachment: fixed;
 }
 .attributes-list{
-    padding: 90px;
+    /* padding: 90px; */
+    /* text-align: left; */
     list-style: none;
     font-family: 'Press Start 2P', cursive;
 }
@@ -42,10 +29,8 @@ h3{
     padding-top:20px
 }
 h2{
-    position: relative;
     font-family: 'Open Sans', sans-serif;
     font-size:40px;
-    top:-80px;
 }
 .pokemon-pic{
     height:300px;
@@ -53,22 +38,45 @@ h2{
 }
 
 #arceus{
-    height: 800px;
+    height: 700px;
     text-align: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(arceus-bg.jpg)
+    background: url(arceus-bg.jpg);
+    background-attachment: fixed;
 }
 
 #machamp{
-    height: 800px;
+    height: 700px;
     text-align: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: url(mbackground.jpg);
     background-size: cover;
+    background-attachment: fixed;
+
 }
+
+#pokeball:hover{
+        animation: shake .2s;
+
+      
+}
+
+.nav-wrapper{
+    background-color:rgb(228,200,68)
+}
+@keyframes shake {
+    50% {
+        transform: rotate(10deg);
+      }
+
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    h2{
+        position: relative;
+         top: -100px; 
+    }
+  }
+
+  

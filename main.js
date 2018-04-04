@@ -1,3 +1,4 @@
+
 class Pokemon{
     constructor(name,hp,attack,defense,abilities=[]){
         this.hp = hp
@@ -30,7 +31,7 @@ let minhal = new Trainer()
 
 axios.get("https://pokeapi.co/api/v2/pokemon/65/")
 .then((response) => {
-    let data = response.data
+    let data =  response.data
     let hp = document.getElementById("alakazam-hp")
     let attack = document.getElementById("alakazam-attack")
     let defense = document.getElementById("alakazam-defense")
@@ -47,6 +48,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
 
     data.abilities.forEach((item) => {
         alakazam.addAbility(item.ability.name)
+        
         abilities.innerHTML += item.ability.name +"<br>"
     })
 
@@ -124,3 +126,22 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
     })
 
     console.log(minhal)
+
+
+    let button = document.getElementById("scroll")
+    button.addEventListener("click", (event) => {
+        let div = document.getElementById("alakazam")
+        div.scrollIntoView({behavior: "smooth"});
+    });
+
+    let button2 = document.getElementById("scroll2")
+    button2.addEventListener("click", (event) => {
+        let div = document.getElementById("arceus")
+        div.scrollIntoView({behavior: "smooth"});
+    });
+
+    let button3 = document.getElementById("scroll3")
+    button3.addEventListener("click", (event) => {
+        let div = document.getElementById("machamp")
+        div.scrollIntoView({behavior: "smooth"});
+    });

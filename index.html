@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
   <link rel="stylesheet" href="main.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-  </head>
-  <body>
+</head>
+
+<body>
   <header>
     <nav>
-
+      <div class="nav-wrapper">
+        <a class="brand-logo center" id="headerText">MingKinhal's Pokedexx</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a id="scroll" class="btn">Alakazam</a>
+          </li>
+          <li>
+            <a id="scroll2" class="btn">Arceus</a>
+          </li>
+          <li>
+            <a id="scroll3" class="btn">Machamp</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
+    <div class="container" id="trainerContainer">
+      <div class="row">
+        <section id="trainer" class="valign-wrapper">
+          <h3>Hello! My name is MingKinhal and I'm a Pokemon trainer!
+            <br>Take a look of my pokedex of pokemon</h3>
+            
+          <img id="pokeball" src="poke.png">
+        </section>
+      </div>
+    </div>
 
-  <section id="trainer">
-    <h3>Hello! My name is KingMinhal and I'm a Pokemon trainer! Take a look of my pokedex of pokemon</h3>
-    <img id="pokeball" src="poke.png">
   </section>
 
-  </section>
-    <section id="alakazam">
+  <section id="alakazam" class="valign-wrapper">
+    <div class=container>
+      <div class="row">
         <h2>Alakazam</h2>
-        <div class="pokemon-div">
+      </div>
+      <div class="row">
+        <div class="col m6 s12">
           <img class="pokemon-pic" src="alakazam.png">
+        </div>
+
+        <div class="col m6 s12">
           <ul class="attributes-list">
             <li class="hp">HP:</li>
             <li id="alakazam-hp"></li>
@@ -35,13 +65,22 @@
             <li class="abilities">Abilities:</li>
             <li id="alakazam-abilities"></li>
           </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="arceus">
+  <section id="arceus" class="valign-wrapper">
+    <div class=container>
+      <div class="row">
         <h2>Arceus</h2>
-        <div class="pokemon-div">
+      </div>
+      <div class="row">
+        <div class="col m6 s12">
           <img class="pokemon-pic" src="arceus.png">
+        </div>
+
+        <div class="col m6 s12">
           <ul class="attributes-list">
             <li class="hp">HP:</li>
             <li id="arceus-hp"></li>
@@ -52,13 +91,22 @@
             <li class="abilities">Abilities:</li>
             <li id="arceus-abilities"></li>
           </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="machamp">
+  <section id="machamp" class="valign-wrapper">
+    <div class=container>
+      <div class="row">
         <h2>Machamp</h2>
-        <div class="pokemon-div">
+      </div>
+      <div class="row">
+        <div class="col m6 s12">
           <img class="pokemon-pic" src="machamp.png">
+        </div>
+
+        <div class="col m6 s12">
           <ul class="attributes-list">
             <li class="hp">HP:</li>
             <li id="machamp-hp"></li>
@@ -69,10 +117,14 @@
             <li class="abilities">Abilities:</li>
             <li id="machamp-abilities"></li>
           </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </body>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
+</body>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
 </html>
