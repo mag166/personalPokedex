@@ -1,119 +1,100 @@
-#headerText{
-    color: black;
-}
-#nav-bar{
-    text-overflow: clip;
+#headerText {
+  color: black; }
 
-}
-#trainer{
-    height:650px;
-    text-align: center;
-    background-color: rgb(230,230,230);
-    margin-top: -30px;
-}
-h3{
-    position: relative;
-    top:40px;
-    font-family: 'Open Sans', sans-serif;
-    font-size:30px;
-}
-#pokeball{
-    position: relative;
-    top:40px;
-    height:300px;
-}
+#nav-bar {
+  text-overflow: clip; }
 
-#alakazam{
-    height: 700px;
-    text-align: center;
-    background: url(abackground.jpg);
-    background-attachment: fixed;
-}
+#trainer {
+  height: 650px;
+  text-align: center;
+  margin-top: -30px;
+  background-image: url("wallpaper.jpg");
+  margin-bottom: -30px; }
 
+h3 {
+  position: relative;
+  top: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px; }
 
+#pokeball {
+  position: relative;
+  top: 40px;
+  height: 300px; }
 
-.attributes-list li{
-    opacity: 0;
-}
-.attributes-list{
-    /* padding: 90px; */
-    /* text-align: left; */
-    list-style: none;
-    font-family: 'Press Start 2P', cursive;
-}
-.attack,.defense,.abilities{
-    padding-top:20px
-}
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size:40px;
-}
-.pokemon-pic{
-    opacity: 0;
-    height:300px;
+#alakazam {
+  height: 700px;
+  text-align: center;
+  background: url(abackground.jpg);
+  background-attachment: fixed; }
 
-}
+.attributes-list li {
+  text-align: left;
+  opacity: 0; }
 
-#arceus{
-    height: 700px;
-    text-align: center;
-    background: url(arceus-bg.jpg);
-    background-attachment: fixed;
-}
+.attributes-list {
+  /* padding: 90px; */
+  /* text-align: left; */
+  list-style: none;
+  font-family: 'Press Start 2P', cursive; }
 
-#machamp{
-    height: 700px;
-    text-align: center;
-    background: url(mbackground.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.attack, .defense, .abilities {
+  padding-top: 20px; }
 
-}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px; }
 
+.pokemon-pic {
+  opacity: 0;
+  height: 300px; }
 
-.pokeball-shake{
-    animation: shake .2s;
-}
-#pokeball:hover{
-        animation: shake .2s;      
-}
+#arceus {
+  height: 700px;
+  text-align: center;
+  background: url(arceus-bg.jpg);
+  background-attachment: fixed; }
 
-.nav-wrapper{
-    background-color:rgb(228,200,68)
-}
+#machamp {
+  height: 700px;
+  text-align: center;
+  background: url(mbackground.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
 
-#footer{
-    background-color: rgb(228,200,68);
-}
+.pokeball-shake {
+  animation: shake .2s; }
+
+#pokeball:hover {
+  animation: shake .2s; }
+
+.nav-wrapper {
+  background-color: #e4c844; }
+
+#footer {
+  background-color: #e4c844; }
 
 @keyframes shake {
-    50% {
-        transform: rotate(10deg);
-      }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(-10deg); } }
+@media screen and (min-width: 600px) {
+  h2 {
+    position: relative;
+    top: -100px; } }
+@media screen and (max-width: 600px) {
+  .attributes-list li {
+    text-align: center; } }
+.show {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards; }
 
-    100% {
-      transform: rotate(-10deg);
-    }
-  }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-  @media screen and (min-width: 600px) {
-    h2{
-        position: relative;
-         top: -100px; 
-    }
-
-
-}
-
-.show{
-	animation-name: fadeIn;
-	animation-duration: 0.6s;
-	animation-fill-mode: forwards;
-}
-@keyframes fadeIn{
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-
-  
+/*# sourceMappingURL=main.css.map */
