@@ -13,7 +13,7 @@ class Pokemon{
     }
 }
 
-class Trainer{
+class MingKinhal{
     constructor(){
         this.pokemon = []
     }
@@ -36,9 +36,9 @@ class Trainer{
 
 }
 
-let minhal = new Trainer()
-
-axios.get("https://pokeapi.co/api/v2/pokemon/65/")
+let minhal = new MingKinhal()
+//https://pokeapi.co/api/v2/pokemon/65/
+axios.get("https://raw.githubusercontent.com/mag166/personalPokedex/master/alakazamJSON.json")
 .then((response) => {
     let data =  response.data
     let hp = document.getElementById("alakazam-hp")
@@ -69,8 +69,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
 }).catch((error) => {
     console.log(error)
   })
-
-  axios.get("https://pokeapi.co/api/v2/pokemon/493/")
+//https://pokeapi.co/api/v2/pokemon/493/
+  axios.get("https://raw.githubusercontent.com/mag166/personalPokedex/master/arceusJSON.json")
 .then((response) => {
     let data = response.data
     let hp = document.getElementById("arceus-hp")
@@ -101,8 +101,8 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
     console.log(error)
   })
 
-
-  axios.get("https://pokeapi.co/api/v2/pokemon/68/")
+//https://pokeapi.co/api/v2/pokemon/68/
+  axios.get("https://raw.githubusercontent.com/mag166/personalPokedex/master/machampJSON.json")
   .then((response) => {
       let data = response.data
       let hp = document.getElementById("machamp-hp")
