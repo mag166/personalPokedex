@@ -63,11 +63,8 @@ h2 {
   background-size: cover;
   background-attachment: fixed; }
 
-.pokeball-shake {
-  animation: shake .2s; }
-
 #pokeball:hover {
-  animation: shake .2s; }
+  animation: shake 0.6s; }
 
 .nav-wrapper {
   background-color: #e4c844; }
@@ -76,10 +73,16 @@ h2 {
   background-color: #e4c844; }
 
 @keyframes shake {
+  0% {
+    transform: rotate(10deg); }
+  25% {
+    transform: rotate(-10deg); }
   50% {
     transform: rotate(10deg); }
+  75% {
+    transform: rotate(-10deg); }
   100% {
-    transform: rotate(-10deg); } }
+    transform: rotate(10deg); } }
 @media screen and (min-width: 600px) {
   h2 {
     position: relative;
