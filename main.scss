@@ -1,5 +1,6 @@
 #headerText{
     color: black;
+    font-family: 'Bree Serif', serif;
 }
 #nav-bar{
     text-overflow: clip;
@@ -8,7 +9,6 @@
 #trainer{
     height:650px;
     text-align: center;
-    // background-color: rgb(230,230,230);
     margin-top: -30px;
     background-image: url("wallpaper.jpg");
     margin-bottom:-30px;
@@ -16,7 +16,7 @@
 h3{
     position: relative;
     top:40px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bree Serif', serif;
     font-size:30px;
 }
 #pokeball{
@@ -48,7 +48,7 @@ h3{
     padding-top:20px
 }
 h2{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bree Serif', serif;
     font-size:40px;
 }
 .pokemon-pic{
@@ -109,6 +109,9 @@ h2{
 @media screen and (max-width: 600px) {
     .attributes-list li{
         text-align: center;
+    }
+    #pokeball{
+        height:200px;
     }
 }
 .show{

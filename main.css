@@ -1,5 +1,6 @@
 #headerText {
-  color: black; }
+  color: black;
+  font-family: 'Bree Serif', serif; }
 
 #nav-bar {
   text-overflow: clip; }
@@ -14,7 +15,7 @@
 h3 {
   position: relative;
   top: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
   font-size: 30px; }
 
 #pokeball {
@@ -42,7 +43,7 @@ h3 {
   padding-top: 20px; }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
   font-size: 40px; }
 
 .pokemon-pic {
@@ -85,7 +86,10 @@ h2 {
     top: -100px; } }
 @media screen and (max-width: 600px) {
   .attributes-list li {
-    text-align: center; } }
+    text-align: center; }
+
+  #pokeball {
+    height: 200px; } }
 .show {
   animation-name: fadeIn;
   animation-duration: 0.6s;
