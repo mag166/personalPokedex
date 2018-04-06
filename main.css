@@ -1,15 +1,22 @@
 #headerText{
-    color: black
+    color: black;
+}
+#nav-bar{
+    text-overflow: clip;
 }
 #trainer{
-    height:600px;
+    height:650px;
     text-align: center;
 }
 h3{
+    position: relative;
+    top:20px;
     font-family: 'Open Sans', sans-serif;
     font-size:30px;
 }
 #pokeball{
+    position: relative;
+    top:20px;
     height:300px;
 }
 
@@ -53,15 +60,22 @@ h2{
 
 }
 
-#pokeball:hover{
-        animation: shake .2s;
 
-      
+.pokeball-shake{
+    animation: shake .2s;
+}
+#pokeball:hover{
+        animation: shake .2s;      
 }
 
 .nav-wrapper{
     background-color:rgb(228,200,68)
 }
+
+#footer{
+    background-color: rgb(228,200,68);
+}
+
 @keyframes shake {
     50% {
         transform: rotate(10deg);
@@ -77,6 +91,17 @@ h2{
         position: relative;
          top: -100px; 
     }
-  }
+}
+
+.show{
+	animation-name: fadeIn;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
 
   

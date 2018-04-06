@@ -25,6 +25,15 @@ class Trainer{
     add(poke){
         this.pokemon.push(poke)
     }
+
+    get(name){
+        for(let i = 0; i < this.pokemon.length; i++){
+            if(name == this.pokemon[i].name){
+                return this.pokemon[i]
+            }
+        }
+    }
+
 }
 
 let minhal = new Trainer()
@@ -120,13 +129,14 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
       attack.innerHTML = machamp.attack
       defense.innerHTML = machamp.defense
 
+      console.log(minhal.get("machamp"))
+
 
   }).catch((error) => {
       console.log(error)
     })
 
-    console.log(minhal)
-
+    console.log(minhal.get("machamp"))
 
     let button = document.getElementById("scroll")
     button.addEventListener("click", (event) => {
@@ -145,3 +155,38 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
         let div = document.getElementById("machamp")
         div.scrollIntoView({behavior: "smooth"});
     });
+
+
+    let machamp = document.getElementById("machamp-pic")
+    machamp.addEventListener("mouseover", function( event ) {   
+        machamp.src = "machamp-shiny.png";
+    })
+
+    machamp.addEventListener("mouseout", function( event ) {   
+        machamp.src = "machamp.png";
+    })
+
+    let arceus = document.getElementById("arceus-pic")
+    arceus.addEventListener("mouseover", function( event ) {   
+        arceus.src = "arceus-shiny.png";
+    })
+
+    arceus.addEventListener("mouseout", function( event ) {   
+        arceus.src = "arceus.png";
+    })
+
+    let alakazam = document.getElementById("alakazam-pic")
+    alakazam.addEventListener("mouseover", function( event ) {   
+        alakazam.src = "alakazam-shiny.png";
+    })
+
+    alakazam.addEventListener("mouseout", function( event ) {   
+        alakazam.src = "alakazam.png";
+    })
+
+    window.addEventListener("scroll", (event) => {
+
+        if(window.scrollY > 0){
+            section1.classList.add("show")
+        }
+    })
