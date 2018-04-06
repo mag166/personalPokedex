@@ -185,8 +185,87 @@ axios.get("https://pokeapi.co/api/v2/pokemon/65/")
     })
 
     window.addEventListener("scroll", (event) => {
+        
+        if(window.scrollY > 500){
+            let alakazamPic = document.getElementById("alakazam-pic")
+            alakazamPic.style.animation = "fadeIn 0.6s forwards"
+            
+        }
 
-        if(window.scrollY > 0){
-            section1.classList.add("show")
+        if(window.scrollY > 550){
+            let alakazamHPLabel = document.getElementById("alakazam-hp-label")
+            alakazamHPLabel.style.animation = "fadeIn 0.6s forwards"
+            let alakazamHP = document.getElementById("alakazam-hp")
+            alakazamHP.style.animation = "fadeIn 1.6s forwards"
+            let alakazamAttackLabel = document.getElementById("alakazam-attack-label")
+            alakazamAttackLabel.style.animation = "fadeIn 2.6s forwards"
+            let alakazamAttack = document.getElementById("alakazam-attack")
+            alakazamAttack.style.animation = "fadeIn 3.6s forwards"
+
+            let alakazamDefenseLabel = document.getElementById("alakazam-defense-label")
+            alakazamDefenseLabel.style.animation = "fadeIn 4.6s forwards"
+            let alakazamDefense = document.getElementById("alakazam-defense")
+            alakazamDefense.style.animation = "fadeIn 5.6s forwards"
+
+            let alakazamAbilitiesLabel = document.getElementById("alakazam-abilities-label")
+            alakazamAbilitiesLabel.style.animation = "fadeIn 5.6s forwards"
+            let alakazamAbilities = document.getElementById("alakazam-abilities")
+            alakazamAbilities.style.animation = "fadeIn 5.6s forwards"
+
+            
+        }
+
+        if(window.scrollY > 1200){
+            let arceusPic = document.getElementById("arceus-pic")
+            arceusPic.style.animation = "fadeIn 0.6s forwards"
+            
+        }
+
+        if(window.scrollY > 1250){
+            let arceusHPLabel = document.getElementById("arceus-hp-label")
+            arceusHPLabel.style.animation = "fadeIn 0.6s forwards"
+            let arceusHP = document.getElementById("arceus-hp")
+            arceusHP.style.animation = "fadeIn 1.6s forwards"
+            let arceusAttackLabel = document.getElementById("arceus-attack-label")
+            arceusAttackLabel.style.animation = "fadeIn 2.6s forwards"
+            let arceusAttack = document.getElementById("arceus-attack")
+            arceusAttack.style.animation = "fadeIn 3.6s forwards"
+
+            let arceusDefenseLabel = document.getElementById("arceus-defense-label")
+            arceusDefenseLabel.style.animation = "fadeIn 4.6s forwards"
+            let arceusDefense = document.getElementById("arceus-defense")
+            arceusDefense.style.animation = "fadeIn 5.6s forwards"
+
+            let arceusAbilitiesLabel = document.getElementById("arceus-abilities-label")
+            arceusAbilitiesLabel.style.animation = "fadeIn 5.6s forwards"
+            let arceusAbilities = document.getElementById("arceus-abilities")
+            arceusAbilities.style.animation = "fadeIn 5.6s forwards"
+        }
+
+        if(window.scrollY > 1900){
+            let machampPic = document.getElementById("machamp-pic")
+            machampPic.style.animation = "fadeIn 0.6s forwards"
+            
+        }
+
+        if(window.scrollY > 1950){
+            let machampHPLabel = document.getElementById("machamp-hp-label")
+            machampHPLabel.style.animation = "fadeIn 0.6s forwards"
+            let machampHP = document.getElementById("machamp-hp")
+            machampHP.style.animation = "fadeIn 1.6s forwards"
+            let machampAttackLabel = document.getElementById("machamp-attack-label")
+            machampAttackLabel.style.animation = "fadeIn 2.6s forwards"
+            let machampAttack = document.getElementById("machamp-attack")
+            machampAttack.style.animation = "fadeIn 3.6s forwards"
+
+            let machampDefenseLabel = document.getElementById("machamp-defense-label")
+            machampDefenseLabel.style.animation = "fadeIn 4.6s forwards"
+            let machampDefense = document.getElementById("machamp-defense")
+            machampDefense.style.animation = "fadeIn 5.6s forwards"
+
+            let machampAbilitiesLabel = document.getElementById("machamp-abilities-label")
+            machampAbilitiesLabel.style.animation = "fadeIn 5.6s forwards"
+            let machampAbilities = document.getElementById("machamp-abilities")
+            machampAbilities.style.animation = "fadeIn 5.6s forwards"
         }
     })

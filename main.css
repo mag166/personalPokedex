@@ -3,20 +3,23 @@
 }
 #nav-bar{
     text-overflow: clip;
+
 }
 #trainer{
     height:650px;
     text-align: center;
+    background-color: rgb(230,230,230);
+    margin-top: -30px;
 }
 h3{
     position: relative;
-    top:20px;
+    top:40px;
     font-family: 'Open Sans', sans-serif;
     font-size:30px;
 }
 #pokeball{
     position: relative;
-    top:20px;
+    top:40px;
     height:300px;
 }
 
@@ -25,6 +28,12 @@ h3{
     text-align: center;
     background: url(abackground.jpg);
     background-attachment: fixed;
+}
+
+
+
+.attributes-list li{
+    opacity: 0;
 }
 .attributes-list{
     /* padding: 90px; */
@@ -40,6 +49,7 @@ h2{
     font-size:40px;
 }
 .pokemon-pic{
+    opacity: 0;
     height:300px;
 
 }
@@ -91,6 +101,8 @@ h2{
         position: relative;
          top: -100px; 
     }
+
+
 }
 
 .show{
